@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: pink;
+}
+
+main {
+    margin: 20px;
+}
+
+main .other {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+    background-color: #2f3542;
+}
+
+main .other .box {
+    border: 5px solid #7f8c8d;
+    padding: 10px;
+}
+
+main .save {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 24px;
+    row-gap: 24px;
+    background-color: #2f3542;
+    border: 5px solid #7f8c8d;
+    padding: 5px;
+}
+
+main .other,
+.save .box {
+    border: 5px solid #7f8c8d;
+    padding: 10px;
+}
+
+main .save .box img {
+    width: 200px;
+    height: 130px;
+    border: 5px solid #7f8c8d;
+    display: inline-block;
+}
+
+/* 
+    380 240
+    190 120
+ */
+
+main .save .box span {
+    font-size: 24px;
+    font-weight: 500;
+    vertical-align: top;
+    position: relative;
+    left: 6px;
+    top: 2px;
+    display: inline-block;
+    width: 168px;
+    height: 135px;
+}
+
+i.iconfont.Download {
+    position: relative;
+    left: 5px;
+    color: pink;
+    font-size: 15px;
+}

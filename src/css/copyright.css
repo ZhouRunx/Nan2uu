@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    -webkit-user-seletct: none;
+    -moz-user-seletct: none;
+    -ms-user-seletct: none;
+}
+
+main {
+    margin: 0 100px;
+    margin-bottom: 100px;
+}
+
+main .title {
+    display: flex;
+    position: relative;
+    bottom: 20px;
+}
+
+main .title img {
+    width: 128px;
+    height: 128px;
+}
+
+main .title h1 {
+    position: relative;
+    top: 20px;
+}
+
+main .title h2 {
+    position: relative;
+    top: 70px;
+    right: 190px;
+}
+
+main .copyright {
+    color: #7f8c8d;
+    font-size: 18px;
+}
+
+main .copyright h4 {
+    position: relative;
+    top: 18px;
+}

@@ -1,0 +1,26 @@
+body {
+    overflow: hidden;
+}
+
+main {
+    display: grid;
+    justify-content: center;
+    align-self: center;
+    width: 100vw;
+}
+
+ol li {
+    margin-top: 12px;
+    font-size: 18px;
+}
+
+.nameSpan {
+    float: left;
+    width: 200px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}

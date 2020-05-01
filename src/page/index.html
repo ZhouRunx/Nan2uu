@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>首页 - 南烛Nan2uu</title>
+    <link rel="shortcut icon" href="./src/img/nan2uu.webp" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/index.css">
+    <link rel="stylesheet" href="./src/css/basic.css">
+    <link rel="stylesheet" href="//at.alicdn.com/t/font_1688233_dnqkjgwpqd.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="icon">
+            <a href="/">
+                <img src="./src/img/nan2uu.webp">
+                <span>南烛Nan2uu</span>
+            </a>
+        </div>
+        <div class="list">
+            <a href="./src/page/about.html" class="about hover">关于</a>
+            <a href="./src/page/panDownload.html" class="pan hover">百度链接</a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="other">
+            <div class="box">
+                <a href="./src/resources/2ev.zip">
+                    <img src="./src/img/2ev.png" style="position: relative;top: 2px;">
+                    <span>2ev</span>
+                </a>
+                <i class="iconfont Download"></i>
+            </div>
+            <div class="box">
+                <a href="./src/resources/bsl.zip">
+                    <span>BSL - 修改版</span>
+                </a>
+                <i class="iconfont Download"></i>
+            </div>
+        </div>
+        <div class="save"></div>
+    </main>
+
+    <footer>
+        <div class="footerNav">
+            <div class="state">
+                <div class="icon">
+                    <a href="//nan2uu.tk">南烛Nan2uu v2.0</a>
+                </div>
+                <div class="copyright">
+                    <span>
+                        Copyright © 2019 - 2020 南烛Nan2uu. All rights reserved. /
+                        <a href="./src/page/copyright.html">法律声明及版权</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var save = document.getElementsByClassName('save')[0];
+        var nameArr = ['滨海花店', '城堡-教程存档', '无限的灵质空间', '城堡-参观存档', '森系小木屋',
+            '中式阁楼', '中型帆船', '中式小院', '交易所+仓库+宿舍', '树屋宠物小窝', '霍比特田园小屋'
+        ];
+        var bvArr = ['BV1Mc411h72N',
+            'BV14j411f7At', 'BV1X7411t77C',
+            'BV1a741167si', 'BV19J411t71P',
+            'BV1XJ411m7h5', 'BV1EE411C7rT',
+            'BV1rJ411u78q', 'BV114411z78C',
+            'BV12t41177rp', 'BV1Kx411R7J1'
+        ];
+
+        for (let i = 0; i < nameArr.length; i++) {
+            var div = document.createElement('div');
+            var a = document.createElement('a');
+            var img = document.createElement('img');
+            var span = document.createElement('span');
+            var icon = document.createElement('i');
+            div.setAttribute('class', 'box');
+            a.setAttribute('href', './src/resources/save/' + bvArr[i] + '.zip');
+            img.setAttribute('src', './src/img/save/' + bvArr[i] + '.webp')
+            span.innerHTML = nameArr[i];
+            icon.setAttribute('class', 'iconfont Download');
+            span.appendChild(icon);
+            a.appendChild(img);
+            a.appendChild(span);
+            div.appendChild(a);
+            save.appendChild(div);
+        }
+    </script>
+</body>
+
+</html>

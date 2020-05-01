@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="cn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百度网盘链接 - 南烛Nan2uu</title>
+    <link rel="shortcut icon" href="../img/nan2uu.webp" type="image/x-icon">
+    <link rel="stylesheet" href="../css/basic.css">
+    <link rel="stylesheet" href="../css/panDownload.css">
+</head>
+
+<body>
+    <nav>
+        <div class="icon">
+            <a href="/">
+                <img src="../img/nan2uu.webp">
+                <span>南烛Nan2uu</span>
+            </a>
+        </div>
+        <div class="list">
+            <a href="../page/about.html" class="about hover">关于</a>
+            <a href="../page/panDownload.html" class="pan hover">百度链接</a>
+        </div>
+    </nav>
+
+    <main>
+        <noscript>你的浏览器该升级了</noscript>
+        <ol>
+            <li id="li0">
+                <span class="nameSpan">BSL - 修改版</span>
+                <a class="linkA"
+                    href="https://pan.baidu.com/s/1egdKrDsHxaCS5tla_1W9tg">光影链接：https://pan.baidu.com/s/1egdKrDsHxaCS5tla_1W9tg,提取码：agnc</a>
+            </li>
+        </ol>
+    </main>
+
+    <footer>
+        <div class="footerNav">
+            <div class="state">
+                <div class="icon">
+                    <a href="//nan2uu.tk">南烛Nan2uu v2.0</a>
+                </div>
+                <div class="copyright">
+                    <span>
+                        Copyright © 2019 - 2020 南烛Nan2uu. All rights reserved. /
+                        <a href="../page/copyright.html">法律声明及版权</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script>
+        var ol = document.querySelector('ol');
+        var nameArr = ['滨海花店', '无限的灵质空间', '城堡-参观存档', '城堡-教程存档', '森系小木屋',
+            '中式阁楼', '中型帆船', '中式小院', '交易所+仓库+宿舍', '树屋宠物小窝', '霍比特田园小屋'
+        ];
+        var linkArr = [
+            '存档链接：https://pan.baidu.com/s/1LHlxbPJHVf8ZvbKZuUJF4g,提取码：hu7w',
+            '存档链接：https://pan.baidu.com/s/1Ssp_w3sgsMMx0jdAhrcNUQ,提取码：7rtj',
+            '存档链接：https://pan.baidu.com/s/1ZIIoxADftch5VzZia2dMpg,提取码：llot',
+            '存档链接：https://pan.baidu.com/s/1yvgatW-7iWEodig4QQedPw,提取码：kjng',
+            '存档链接：https://pan.baidu.com/s/1OyPABNJH8f3DuVMRzKu24Q,提取码：dec46',
+            '存档链接：https://pan.baidu.com/s/1a-WteuOvgZFgc1ISnx6H0w,提取码：myrg',
+            '存档链接：https://pan.baidu.com/s/1jsDH-TIvQLrkPo9cI6wvmg,提取码：kf2f',
+            '存档链接：https://pan.baidu.com/s/1vjq4yC4K2kvpGq-d-n08tA,提取码：yabt',
+            '存档链接：https://pan.baidu.com/s/1B7D1ymZ02SkJhIElMso2cQ,提取码：6tnl',
+            '存档链接：https://pan.baidu.com/s/1Q6SFcKjc_y9JVPvdCTmPfg,提取码：kwdf',
+            '存档链接：https://pan.baidu.com/s/1J61YeDcfqa5fRxHhrwCW6A,提取码：w9r4'
+        ];
+        var hrefArr = ['https://pan.baidu.com/s/1LHlxbPJHVf8ZvbKZuUJF4g',
+            'https://pan.baidu.com/s/1Ssp_w3sgsMMx0jdAhrcNUQ', 'https://pan.baidu.com/s/1ZIIoxADftch5VzZia2dMpg',
+            'https://pan.baidu.com/s/1yvgatW-7iWEodig4QQedPw', 'https://pan.baidu.com/s/1OyPABNJH8f3DuVMRzKu24Q',
+            'https://pan.baidu.com/s/1a-WteuOvgZFgc1ISnx6H0w', 'https://pan.baidu.com/s/1jsDH-TIvQLrkPo9cI6wvmg',
+            'https://pan.baidu.com/s/1vjq4yC4K2kvpGq-d-n08tA', 'https://pan.baidu.com/s/1B7D1ymZ02SkJhIElMso2cQ',
+            'https://pan.baidu.com/s/1Q6SFcKjc_y9JVPvdCTmPfg', 'https://pan.baidu.com/s/1J61YeDcfqa5fRxHhrwCW6A'
+        ];
+
+        // 创建存档li
+        for (let i = 1; i < nameArr.length; i++) {
+            // 创建li span
+            var li = document.createElement('li');
+            var nameSpan = document.createElement('span');
+            var linkA = document.createElement('a');
+            // 修改span显示的内容
+            nameSpan.innerHTML = nameArr[i];
+            linkA.innerHTML = linkArr[i];
+            // 修改创建标签的属性
+            li.setAttribute('id', 'li' + i);
+            nameSpan.setAttribute('class', 'nameSpan');
+            linkA.setAttribute('class', 'linkA');
+            linkA.setAttribute('href', hrefArr[i]);
+            // 应用
+            li.appendChild(nameSpan);
+            li.appendChild(linkA);
+            ol.appendChild(li);
+        }
+    </script>
+</body>
+
+</html>
